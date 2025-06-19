@@ -23,6 +23,7 @@ public class CustomerService {
                 .name(request.getName())
                 .email(request.getEmail())
                 .phone(request.getPhone())
+                .userId(request.getUserId())
                 .build();
 
         return mapToResponse(repository.save(customer));

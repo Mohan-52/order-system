@@ -19,4 +19,7 @@ public class Customer {
     private String email;
 
     private String phone;
+
+    @Column(nullable = true)
+    private String userId;
 }
